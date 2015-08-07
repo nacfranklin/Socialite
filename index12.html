@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Socialite Text</title>
+    <meta name="description" content="How to Create (Animated) Text Fills with various techniques" />
+    <meta name="keywords" content="text, fill, animation, svg, background-clip, clip, mask" />
+    <meta name="author" content="Yoksel for Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style12.css" />
+</head>
+<body style="background-color:black">
+		</body>
+<body>
+    <div class="container">
+        <div class="content">
+            <svg viewBox="0 0 1500 1500">
+
+                <!-- Symbol -->
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                        Socialite
+                    </text>
+                </symbol>
+
+                <!--Duplicate symbols-->
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+
+            </svg>
+        </div>
+	</div> <!-- /container -->
+				<!--<script src="js/classie.js"></script>
+				<script src="js/uisearch.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+				<script src="js/jquery.dlmenu.js"></script>
+				<script>
+					$(function() {
+						$( '#dl-menu' ).dlmenu({
+							animationClasses : { classin : 'dl-animate-in-4', classout : 'dl-animate-out-4' }
+						});
+					});
+					
+					new UISearch( document.getElementById( 'sb-search' ) );-->
+</body>
+</html>
