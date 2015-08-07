@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>(Animated) Text Fills - Demo 12</title>
+    <meta name="description" content="How to Create (Animated) Text Fills with various techniques" />
+    <meta name="keywords" content="text, fill, animation, svg, background-clip, clip, mask" />
+    <meta name="author" content="Yoksel for Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style12.css" />
+    <!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <!--<header class="codrops-header">
+           <!-- <div class="codrops-links">
+                <a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/ClickEffects/" title="Previous Demo"><span>Previous Demo</span></a>
+                <a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=23145" title="Back to the article"><span>Back to the Codrops article</span></a>
+            </div>
+        </header>-->
+        <div class="content">
+            <svg viewBox="0 0 1500 1500">
+
+                <!-- Symbol -->
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                        Socialite
+                    </text>
+                </symbol>
+
+                <!--Duplicate symbols-->
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+
+            </svg>
+        </div>
+    </div> 
+</body>
+</html>
