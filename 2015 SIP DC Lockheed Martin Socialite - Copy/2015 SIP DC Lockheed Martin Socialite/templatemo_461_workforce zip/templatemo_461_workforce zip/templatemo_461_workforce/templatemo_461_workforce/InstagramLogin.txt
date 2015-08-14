@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Twitter via Socialite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+	  body {
+		background: url('http://2.bp.blogspot.com/-TEqaDUIWxcM/UIg0c0iDpaI/AAAAAAAAA3g/Mu6Bp18eYGw/s1600/gradient.jpg') fixed;
+		background-size: cover;
+		padding: 0;
+		margin: 0;
+	  }
+	  body {
+		padding-top: 40px; 
+	  }
+	 .input-group-addon{
+		background-color: black;
+		color: white;
+		}
+	.panel-body{
+		background-color: transparent;
+		color: white;
+	}
+	.form-signin input[type="text"] {
+		margin-bottom: 5px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		background: rgb(0, 0, 0);
+		background: rgba(0, 0, 0, 0.0);
+		color: white;
+		}
+	.form-signin input[type="password"] {
+		margin-bottom: 10px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		background: rgb(0, 0, 0);
+		background: rgba(0, 0, 0, 0.0);
+		color: white;
+		}
+    </style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                          <img src="http://breckrental.com/wp-content/uploads/2013/06/Twitter-Logo.jpg" class="login" height="70">
+                          <h3 class="text-center">Twitter Account</h3>
+                            <div class="panel-body">
+                              <form accept-charset="UTF-8" role="form" class="form-signin">
+                                <fieldset>
+                                  <div class="form-group">
+                                    <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input id="InputUsername" placeholder="account username" class="form-control" type="text"> <!-- oninvalid="setCustomValidity('Please enter a valid account username!')" onchange="try{setCustomValidity('')}catch(e){}" required="" -->
+                                    </div>
+									<div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                      <input id="InputPassword" placeholder="account password" class="form-control" type="password"> <!-- oninvalid="setCustomValidity('Please enter a valid account password!')" onchange="try{setCustomValidity('')}catch(e){}" required="" -->
+                                    </div>
+									<a href= "file:///C:/Users/GWCUser34/Downloads/Socialite%20Profile%20page.htmln" class= "btn btn-success">Add Account</a>
+                                  </div>
+								  <nav>
+									  <ul class="pager">
+										<li class="previous"><a href="file:///C:/Users/GWCUser19/Downloads/Socialite%20signup%20page%202.html#"><span aria-hidden="true">&larr;</span> Add another social media account</a></li>
+									  </ul>
+								  </nav>
+                                </fieldset>
+                              </form><!--/end form-->
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<script language="javascript">
+		function check(form) {
+			if(form.InputAccountUsername.value == "Myusername1" && form.InputAccountPassword.value == "Mypassword1"{
+				window.open('file:///C:/Users/Aaron/Downloads/Socialite%20signup%20page%202.html')
+			}
+			else {
+				alert("Error Could Not Find Account")
+			}
+		}
+	</script>
+</body>
+</html>

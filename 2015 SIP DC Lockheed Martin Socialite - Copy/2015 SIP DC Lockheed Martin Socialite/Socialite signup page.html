@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style>
+		body {
+		background: url('http://2.bp.blogspot.com/-TEqaDUIWxcM/UIg0c0iDpaI/AAAAAAAAA3g/Mu6Bp18eYGw/s1600/gradient.jpg') fixed;
+		background-size: cover;
+		padding: 0;
+		margin: 0;
+		}
+		.jumbotron {
+		   background: rgb(0, 0, 0); /* This is for ie8 and below */
+		   background: rgba(0, 0, 0, 0.0); 
+		   color: white;
+		   }
+		 .well{
+			background-color: transparent;
+			color: white;
+			}
+		.input-group-addon {
+			background-color: black;
+			color: white;
+			}
+		.next{
+			background-color: transparent;
+			color: white;
+			}
+		.form-signin input-group[type="text"] {
+			margin-bottom: 5px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			background: rgb(0, 0, 0);
+		    background: rgba(0, 0, 0, 0.0);
+			color: white;
+			}
+		.form-signin input-group[type="password"] {
+			margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			background: rgb(0, 0, 0);
+		   background: rgba(0, 0, 0, 0.0);
+			color: white;
+			}
+		.form-group input[type="text"]{
+			background-color: transparent;
+			color: white;
+		}
+		p {
+		   font-family: "Times New Roman";
+		   font-size: 20px;
+		   color: white;
+		   }
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="file:///C:/Users/GWCUser19/Downloads/templatemo_461_workforce/templatemo_461_workforce/SocialiteFinalWebpage.html"><font color= "white">Socialite</font></a>
+		</div>
+		<div>
+		  <ul class="nav navbar-nav">
+			<li><a href="file:///C:/Users/GWCUser19/Downloads/Socialite%20login%20page%20%281%29.html">Sign-in</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="file:///C:/Users/GWCUser19/Downloads/templatemo_461_workforce/templatemo_461_workforce/SocialiteFinalWebpage.html">Home</a></li>
+		  </ul>
+		  <!-- <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Sign-up</a></li> 
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		  </ul> -->
+		</div>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<form accept-charset="UTF-8" role="form" class="form-signin">
+				<div class="col-lg-6">
+					<div class="form-group">
+						<label for="InputName"><font color="white">First Name</font></label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputUserName" id="InputUserName" placeholder="Ex. Bubba">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="InputName"><font color="white">Last Name</font></label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputLastName" id="InputLastName" placeholder="Ex. Beans">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="InputName"><font color="white">Username</font></label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputUsername" id="InputUsername" placeholder="Must contain at least 8 characters with 1 uppercase letter and 1 number" required oninvalid="setCustomValidity('Please enter a username!')" onchange="try{setCustomValidity('')}catch(e){}" required="">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="InputEmail"><font color="white">Password</font></label>
+						<div class="input-group">
+							<input type="text" class="form-control" id="InputPasswordFirst" name="InputPassword" placeholder="Must contain at least 8 characters with 1 uppercase letter and 1 number" required oninvalid="setCustomValidity('Please enter a valid password!')" onchange="try{setCustomValidity('')}catch(e){}" required="">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="InputPassword"><font color="white">Confirm Password</font></label>
+						<div class="input-group">
+							<input type="text" class="form-control" id="InputPasswordSecond" name="InputPassword" placeholder="Confirm Password" required oninvalid="setCustomValidity('Please enter the same password entered in!')" onchange="try{setCustomValidity('')}catch(e){}" required="">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span>
+						</div>
+					</div>
+					<!-- <div class="form-group">
+						<label for="InputMessage">Enter Message</label>
+						<div class="input-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div> -->
+					<p><strong><span class="glyphicon glyphicon-asterisk"></span><font color="white">Required</font></strong></p>
+	`				<nav>
+					  <ul class="pager">
+						<li class="next"><a href="file:///C:/Users/GWCUser19/Downloads/Socialite%20signup%20page%202.html"">Continue<span aria-hidden="true">&rarr;</span></a></li>
+					  </ul>
+					</nav>
+					<!-- <input type="button" name="continue" id="continue" class= "btn btn-success pull-right" onclick="check(this.form)" value="Continue"/> -->
+				</div>
+			</form>
+			<div class="col-lg-5 col-md-push-1">
+					<script language="javascript">
+						function check(form) {
+							if(form.InputUsername.value == "Myusername1" && form.InputPasswordFirst.value == "Mypassword1" && form.InputPasswordSecond.value == "Mypassword1" && form.InputEmail.value == "someone@hotmail.com") {
+								window.open('file:///C:/Users/Aaron/Downloads/AAUTeamBuilder.html32')
+							}
+							else {
+								alert("Error Password or Username")
+							}
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

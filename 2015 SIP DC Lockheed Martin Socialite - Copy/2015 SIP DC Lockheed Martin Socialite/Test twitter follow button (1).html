@@ -1,0 +1,31 @@
+<!DOCTYPE html> 	 	
+<html>
+<head>
+	
+	<script>
+		var twitterUsername = "HillaryClinton";
+		var twitterURL = "https://twitter.com/" + twitterUsername ; 
+		
+		function foo (d,s,id)
+		{var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
+				'://platform.twitter.com/widgets.js';
+				;fjs.parentNode.insertBefore(js,fjs);}}	
+	</script>
+</head>
+<body>
+  <div id = "testDiv"><script>
+		var twitterUsername = "girlswhocodedc" ;
+		var twitterURL = "https://twitter.com/" + twitterUsername ;
+		function twitterLogin (d,s,id)
+		{var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
+				'://platform.twitter.com/widgets.js';
+				;fjs.parentNode.insertBefore(js,fjs);}}
+						</script>
+   </div>	
+ <script>
+	document.getElementById("testDiv").innerHTML= '<a href="' + twitterURL + '" class="twitter-follow-button" data-show-count="false" onclick = "twitterLogin(document, "script", "twitter-wjs");">Follow me @'+ twitterUsername +"</a>;"
+</script>
+</body>
+</html>
